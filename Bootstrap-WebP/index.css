@@ -1,0 +1,17 @@
+:root {
+	--color1: #7BD3EA;
+	--color2: #A1EEBD;
+	--color3: #F6F7C4;
+	--color4: #F6D6D6;
+	--color5: #200E3A;
+	--color6: #38419D;
+	--color7: #3887BE;
+}
+
+a:hover{
+    color:var(--color1);
+}
+footer{
+    background-color: #3887BE;
+    color: white;
+}
