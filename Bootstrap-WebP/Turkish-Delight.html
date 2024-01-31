@@ -32,8 +32,8 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Turkish Delight</a>
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">Turkish Delight</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -83,16 +83,16 @@
                 placeholder="Sizin İçin Ne Bulabiliriz"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">Ara</button>
+              <button class="btn btn-outline-primary" type="submit">Arama</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
-    <menu class="carousel">
+    <menu class="container-fluid carousel p-0">
       <div
         id="carouselId"
-        class="carousel slide carousel-fade mx-auto w-50"
+        class="carousel slide carousel-fade"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -125,8 +125,8 @@
               alt="..."
             />
             <div class="carousel-caption d-block">
-              <h5>Catherine Pulsifer</h5>
-              <p>"İyi bir tatlı, iyi bir günü daha iyi hale getirebilir."</p>
+              <h1>Catherine Pulsifer</h1>
+              <h3>"İyi bir tatlı, iyi bir günü daha iyi hale getirebilir."</h3>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
@@ -136,11 +136,11 @@
               alt="..."
             />
             <div class="carousel-caption d-block">
-              <h5>Linda Solegato</h5>
-              <p>
+              <h1>Linda Solegato</h1>
+              <h3>
                 "Tatlılara olan düşkünlük, bir insanın karakterini yargılamanın
                 en iyi yollarından biridir."
-              </p>
+              </h3>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
@@ -150,8 +150,10 @@
               alt="..."
             />
             <div class="carousel-caption d-block">
-              <h5>Susan Branch</h5>
-              <p>"Mutlu bir anınız varsa, onu tatlı bir anıyla taçlandırın."</p>
+              <h1>Susan Branch</h1>
+              <h3>
+                "Mutlu bir anınız varsa, onu tatlı bir anıyla taçlandırın."
+              </h3>
             </div>
           </div>
         </div>
@@ -175,11 +177,10 @@
         </button>
       </div>
     </menu>
-
     <main class="container cardMenu">
-      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 m-3">
-        <div class="col">
-          <div class="card border border-0">
+      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
+        <div class="col m-0">
+          <div class="card border border-0 bg-primary-subtle">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -193,12 +194,13 @@
                 class="card-img-top w-100"
                 alt="..."
               />
+              <input type="button" value="Tarif" class="btn btn-danger mt-4" />
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card border border-0">
+        <div class="col m-0">
+          <div class="card border border-0 bg-primary-subtle">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -212,11 +214,12 @@
                 class="card-img-top w-100 p"
                 alt="..."
               />
+              <input type="button" value="Tarif" class="btn btn-danger mt-4" />
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card border border-0">
+        <div class="col m-0">
+          <div class="card border border-0 bg-primary-subtle">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -230,11 +233,12 @@
                 class="card-img-top w-100"
                 alt="..."
               />
+              <input type="button" value="Tarif" class="btn btn-danger mt-4" />
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card border border-0">
+        <div class="col m-0">
+          <div class="card border border-0 bg-primary-subtle">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -248,44 +252,51 @@
                 class="card-img-top w-100"
                 alt="..."
               />
+              <input type="button" value="Tarif" class="btn btn-danger mt-4" />
             </div>
           </div>
         </div>
       </section>
+    </main>
 
-      <section class="p-5">
-        <div class="row ">
-          <div class="col ">
-            <nav class="prg">
-              <h2 class="d-">BAKLAVA</h2>
-              <h4>Tatlıların Şahı</h4>
-              <p>
-                Baklava, Orta Doğu mutfağının en sevilen ve özel tatlılarından
-                biridir. İnce yufka katmanları arasına serilen ceviz, fındık
-                veya Antep fıstığı ile birleşerek benzersiz bir lezzet yaratır.
-                Baklavanın kökenleri Antik Ortadoğu'ya dayanmaktadır ve zaman
-                içinde farklı kültürlerde benimsenmiş, özgün tatlarla
-                zenginleştirilmiştir. Türk mutfağında özellikle önemli bir yeri
-                olan baklava, geleneksel olarak özel günlerde, bayramlarda ve
-                kutlamalarda sofraları süsler.
-              </p>
-              <p>
-                Baklavanın yapımı, incelik gerektiren bir süreçtir. İnce yufka
-                tabakaları arasına dökülen tereyağı veya sıvı yağ, katmanların
-                kıtır ve lezzetli olmasını sağlar. Ardından, ceviz, fındık veya
-                Antep fıstığı karışımı eklenir ve katmanlar arasında homojen bir
-                dağılım elde edilir. Yufkaların üzerine özenle kesilen dilimler,
-                fırınlanarak altın rengi bir görünüm alır. Fırından çıkan
-                baklava, sıcakken üzerine serpilen soğuk şeker şurubu ile
-                tatlandırılır, bu da tatlıya benzersiz bir dokunuş katar.
-              </p>
-            </nav>
+    <main class="container">
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 mb-5">
+          <div class="col1 col m-0 pe-5 ">
+            <h2 class="d-">BAKLAVA</h2>
+            <h4>Tatlıların Şahı</h4>
+            <p>
+              Baklava, Orta Doğu mutfağının en sevilen ve özel tatlılarından
+              biridir. İnce yufka katmanları arasına serilen ceviz, fındık veya
+              Antep fıstığı ile birleşerek benzersiz bir lezzet yaratır.
+              Baklavanın kökenleri Antik Ortadoğu'ya dayanmaktadır ve zaman
+              içinde farklı kültürlerde benimsenmiş, özgün tatlarla
+              zenginleştirilmiştir. <strong>Türk mutfağı</strong>nda özellikle
+              önemli bir yeri olan baklava, geleneksel olarak özel günlerde,
+              bayramlarda ve kutlamalarda sofraları süsler.
+            </p>
+            <p>
+              Baklavanın yapımı, incelik gerektiren bir süreçtir. İnce yufka
+              tabakaları arasına dökülen tereyağı veya sıvı yağ, katmanların
+              kıtır ve lezzetli olmasını sağlar. Ardından, ceviz, fındık veya
+              Antep fıstığı karışımı eklenir ve katmanlar arasında homojen bir
+              dağılım elde edilir. Yufkaların üzerine özenle kesilen dilimler,
+              fırınlanarak altın rengi bir görünüm alır. Fırından çıkan baklava,
+              sıcakken üzerine serpilen soğuk şeker şurubu ile tatlandırılır, bu
+              da tatlıya benzersiz bir dokunuş katar.
+            </p>
+            <input
+              type="button"
+              value="Daha Fazla Bilgi"
+              class="btn btn-danger mt-"
+            />
           </div>
-          <div class="col">
-            <nav>
-              <h2>Son Yazılar</h2>
+          
+          <div class="col m-0 p-0">
+            <h2>Son Yazılar</h2>
+            <div class="card-group d-block p-3">
               <div class="card mb-3 border-0" style="max-width: 400px">
-                <div class="row g-0">
+                <div class="row">
                   <div class="col-md-4">
                     <img
                       src="/Bootstrap-WebP/assets/img//pexels-taryn-elliott-5107180 - Kopya.jpg"
@@ -306,7 +317,7 @@
                 </div>
               </div>
               <div class="card mb-3 border-0" style="max-width: 400px">
-                <div class="row g-0">
+                <div class="row">
                   <div class="col-md-4">
                     <img
                       src="/Bootstrap-WebP/assets/img/pexels-pixabay-264939.jpg"
@@ -327,7 +338,7 @@
                 </div>
               </div>
               <div class="card mb-3 border-0" style="max-width: 400px">
-                <div class="row g-0">
+                <div class="row">
                   <div class="col-md-4">
                     <img
                       src="/Bootstrap-WebP/assets/img/pexels-jhon-marquez-2373520.jpg"
@@ -347,7 +358,72 @@
                   </div>
                 </div>
               </div>
-            </nav>
+            </div>
+          </div>
+
+          <div class="col3 m-0 pe-0 fs-5">
+            <ul>
+              <h4
+                class="border-bottom border-3 text-center fw-bold text-uppercase"
+              >
+                Türk Lezzetlerİ
+              </h4>
+              <li class="list1 list-unstyled text-center">
+                <ol class="list-unstyled text-center mt-4 py-2">
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">Lokma </a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">Baklava </a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">Kadayıf </a>
+                  </li>
+
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold"> Güllaç</a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold"> Sütlaç</a>
+                  </li>
+                </ol>
+              </li>
+              <h4
+                class="border-bottom border-3 text-center fw-bold text-uppercase"
+              >
+                Dışarıdan Lezzetler
+              </h4>
+              <li class="list2 list-unstyled text-center">
+                <ol class="list-unstyled text-center mt-4 py-2">
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">Mochi (Japon)</a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold"
+                      >Bûche de Noël (Fransız)
+                    </a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold"
+                      >Trdelník (Çek Cumhuriyeti)
+                    </a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">Kanelbulle (İsveç)</a>
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">
+                      Gulab Jamun (Hint)</a
+                    >
+                  </li>
+                  <li class="m-2 p-1">
+                    <a href="#" class="link-dark fw-bold">
+                      Tiramisu (İtalyan)
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -385,7 +461,7 @@
                 <a class="text-light" href="#">Şerbetli Tatlılar</a>
               </p>
               <p>
-                <a class=" text-light " href="#">Tuzlular</a>
+                <a class="text-light" href="#">Tuzlular</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -398,9 +474,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">İletişim</h6>
-              <p>
-                <i class="bi bi-geo-alt"></i> İstanbul, Kadıköy-120 N:2 TR
-              </p>
+              <p><i class="bi bi-geo-alt"></i> İstanbul, Kadıköy-120 N:2 TR</p>
               <p>
                 <i class="bi bi-envelope mr-3"></i> turkish_delight@gmail.com
               </p>
@@ -416,8 +490,10 @@
           <div class="row d-flex align-items-center">
             <div class="col-md-7 col-lg-8 text-center text-md-start">
               <div class="p-3">
-                ©2024 Copyright: 
-                <a class="text-decoration-none text-light" href="https://mdbootstrap.com/"
+                ©2024 Copyright:
+                <a
+                  class="text-decoration-none text-light"
+                  href="https://mdbootstrap.com/"
                   >TurkishDelight.com</a
                 >
               </div>
